@@ -7,7 +7,11 @@
  */
 int main(void)
 {
-    puts("Programming is like building a multilingual puzzle");
+    const char *str = "Programming is like building a multilingual puzzle\n";
+    int length = 52; // Length of the string including the new line character
+
+    puts(str);
+    fprintf(stderr, "(%d chars long)\n", length);
     return 0;
 }
 
