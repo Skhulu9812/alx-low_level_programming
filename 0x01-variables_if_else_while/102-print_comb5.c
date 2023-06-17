@@ -13,14 +13,16 @@ int main(void)
 	{
 		for (num2 = num1; num2 < 100; num2++)
 		{
-			/* Print first number */
+			/* Print first number tens digit */
 			putchar((num1 / 10) + '0');
+			/* Print first number units digit */
 			putchar((num1 % 10) + '0');
 
 			putchar(' ');
 
-			/* Print second number */
+			/* Print second number tens digit */
 			putchar((num2 / 10) + '0');
+			/* Print second number units digit */
 			putchar((num2 % 10) + '0');
 
 			/* Print comma and space if not the last combination */
@@ -34,5 +36,5 @@ int main(void)
 
 	putchar('\n');
 
-	return 0;
+	return (0);
 }
