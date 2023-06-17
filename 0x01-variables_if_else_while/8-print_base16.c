@@ -1,4 +1,4 @@
-#include <stdio.h>
+ #include <stdio.h>
 
 /**
  * main - Entry point of the program
@@ -7,22 +7,19 @@
  */
 int main(void)
 {
-	int digit;
+	int i;
 
-	for (digit = 0; digit <= 9; digit++)
+	for (i = 0; i < 10; i++)
 	{
-		/* Print digit */
-		putchar(digit + '0');
+		putchar(i + '0');
+	}
 
-		/* Print comma and space if not the last digit */
-		if (digit != 9)
-		{
-			putchar(',');
-			putchar(' ');
-		}
+	for (i = 0; i < 6; i++)
+	{
+		putchar(i + 'a');
 	}
 
 	putchar('\n');
 
-	return (0);
+	return 0;
 }
